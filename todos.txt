@@ -1,0 +1,3 @@
+clean car
+go to work
+get paper
