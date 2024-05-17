@@ -1,4 +1,4 @@
-FILEPATH = "/Users/magoglia/Desktop/app1/pythonProject/todos.txt"
+FILEPATH = "/Users/magoglia/Desktop/web_app1/pythonProject1/todos.txt"
 
 def get_todos(filepath=FILEPATH):
     """Read a text file and return the lift of
