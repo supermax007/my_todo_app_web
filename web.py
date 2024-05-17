@@ -2,6 +2,8 @@ import streamlit as st
 import functions
 
 todos = functions.get_todos()
+
+st.set_page_config(layout='wide')
 def add_todo():
    todo = st.session_state["new_todo"] + "\n"
    todos.append(todo)
@@ -9,7 +11,8 @@ def add_todo():
 
 st.title("My Todo App")
 st.subheader("This my todo app.")
-st.write("This app is to increase your creativity")
+st.write("This app is to increase your <b>creativity</b>.",
+         unsafe_allow_html=True)
 
 for index, todo in enumerate(todos):
    checkbox = st.checkbox(todo, key=todo)
